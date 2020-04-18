@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BMI Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div id="bmi-calculator">
+      <div class="calulator">
+        <div class="cal-header">
+          <h1>BMI Calculator</h1>
+        </div>
+
+        <div class="gender-pick">
+          <ul id="gender-picker">
+            <li class="female"><a href="#" class="female" onClick="femaleClicked();">FEMALE</a></li>
+            <li class="male"><a href="#" class="male" onClick="maleClicked();">MALE</a></li>
+          </ul>
+        </div>
+
+        <div class="bmi-info">
+          <form name="bmiForm">
+          <input id="weight" type="text" name="weight" placeholder="Weight KG"><br>
+          <input id="height" type="text" name="height" placeholder="Height CM"><br>
+          <input id="age" type="text" name="age" placeholder="Age"><br>
+          <!-- <input type="button" value="Metric" onClick="()">
+          <input type="button" value="Imperial" onClick="()"> -->
+          <input id="cal-btn" type="button" value="Calculate BMI" onClick="calculateBmi()">
+          </form>
+        </div>
+
+        <div class="ideal">
+          <p>Ideal BMI</p>
+          <p class="result-text">24.9</p>
+          <p id="ideal-bmi">This is the<br>ideal BMI</p>
+        </div>
+
+        <div class="result">
+          <p>Your BMI</p>
+          <p id="result-text">TBD</p>
+          <p id="meaning">TBD</p>
+        </div>
+
+        <div class="cal-footer">
+          <p>OranjePeel2020</p>
+        </div>
+</div><!--the Bmi Calculaotr-->
+
+    </div>
+  </body>
+  <script src="index.js" charset="utf-8"></script>
+</html>
